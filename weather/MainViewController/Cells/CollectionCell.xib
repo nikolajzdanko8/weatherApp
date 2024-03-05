@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="hnI-4t-dfI" customClass="CollectionCell" customModule="weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kvd-7I-zHb">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-bp-CBF">
+                        <rect key="frame" x="0.0" y="4" width="131" height="20"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPs-9D-cj5">
+                        <rect key="frame" x="0.0" y="29" width="131" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="cAa-It-q3n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                        <color key="textColor" systemColor="systemTealColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jer-u8-Smu">
+                        <rect key="frame" x="2" y="37" width="127" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="127" id="LCN-sy-w0Z"/>
+                            <constraint firstAttribute="height" constant="50" id="rUu-gZ-G2Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEf-rm-nka">
+                        <rect key="frame" x="3" y="97" width="125" height="20"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="xeB-bp-CBF" firstAttribute="leading" secondItem="Kvd-7I-zHb" secondAttribute="leading" id="3HN-Mm-tIS"/>
+                    <constraint firstItem="rPs-9D-cj5" firstAttribute="top" secondItem="xeB-bp-CBF" secondAttribute="bottom" constant="5" id="3Wu-LY-jyf"/>
+                    <constraint firstItem="xeB-bp-CBF" firstAttribute="top" secondItem="Kvd-7I-zHb" secondAttribute="top" constant="4" id="9tJ-oT-1R0"/>
+                    <constraint firstAttribute="trailing" secondItem="xeB-bp-CBF" secondAttribute="trailing" id="BXL-Sc-vYE"/>
+                    <constraint firstItem="jer-u8-Smu" firstAttribute="leading" secondItem="Kvd-7I-zHb" secondAttribute="leading" constant="2" id="IzC-U8-mLT"/>
+                    <constraint firstAttribute="trailing" secondItem="LEf-rm-nka" secondAttribute="trailing" constant="3" id="KMS-Ys-Vhd"/>
+                    <constraint firstAttribute="trailing" secondItem="jer-u8-Smu" secondAttribute="trailing" constant="2" id="UMy-I3-ZJ4"/>
+                    <constraint firstItem="rPs-9D-cj5" firstAttribute="leading" secondItem="Kvd-7I-zHb" secondAttribute="leading" id="d0w-rU-eSF"/>
+                    <constraint firstItem="jer-u8-Smu" firstAttribute="top" secondItem="rPs-9D-cj5" secondAttribute="bottom" constant="-7" id="msa-Iv-Kie"/>
+                    <constraint firstItem="LEf-rm-nka" firstAttribute="top" secondItem="jer-u8-Smu" secondAttribute="bottom" constant="10" id="u8A-2b-ZAz"/>
+                    <constraint firstItem="LEf-rm-nka" firstAttribute="leading" secondItem="Kvd-7I-zHb" secondAttribute="leading" constant="3" id="y9R-77-bzD"/>
+                    <constraint firstAttribute="trailing" secondItem="rPs-9D-cj5" secondAttribute="trailing" id="zE8-TE-rGv"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="131" height="148"/>
+            <connections>
+                <outlet property="hoursOfTheDayLabel" destination="xeB-bp-CBF" id="Nmm-PG-fAt"/>
+                <outlet property="imageView" destination="jer-u8-Smu" id="3s9-Sf-o81"/>
+                <outlet property="probabilityOfPrecipitation" destination="rPs-9D-cj5" id="BYj-QQ-m7h"/>
+                <outlet property="tempOfTheDayLabel" destination="LEf-rm-nka" id="JVo-H7-1HZ"/>
+            </connections>
+            <point key="canvasLocation" x="-131.15942028985509" y="-13.392857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
