@@ -9,3 +9,5 @@
 5. Большие функции разнести на мелкие и сделать private.
 6. Корректировка ui и тестирование всего.
 В общем и целом задание интересное, не хватило времени.
+<img width="331" alt="Снимок экрана 2024-03-05 в 15 10 41" src="https://github.com/nikolajzdanko8/weatherApp/assets/99721727/0c713b89-8d75-4a0f-a9e0-918a9b0bebe0">
+<img width="335" alt="Снимок экрана 2024-03-05 в 15 10 37" src="https://github.com/nikolajzdanko8/weatherApp/assets/99721727/11d82866-bc48-4475-b2e7-fb5b0dbe1b80">
